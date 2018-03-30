@@ -1,0 +1,88 @@
+body {
+    background-color: #e2d6d6 !important;
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    margin: auto;
+}
+
+/*Carousel*/
+.carousel {
+    margin-top: 50px;
+}
+
+.item {
+    height: 500px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h1 ,p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+}
+
+/*Content*/
+.content {
+    margin-top: 50px;
+}
+
+article {
+    border:1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(212, 212, 211);
+    margin-top: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 45%;
+}
+
+/*Стили Footer*/
+footer{
+    height: 60px;
+    background-color: rgb(207, 207, 207);
+    border-top: 1px solid black;
+}
+                        /*Инфа*/
+.footerinf {
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+                        /*Кнопки соц.сетей*/
+.footersocial{
+    padding-right: 20px;
+    padding-top: 15px;
+    
+}
+
+.footersocial:hover {
+    filter: invert(50%);
+    transition: 0.7s;
+}
+
+.bg {
+    margin-top: 60px;
+    background-image: url(../img/background-div.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    
+}
+
