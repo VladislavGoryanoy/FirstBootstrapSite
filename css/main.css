@@ -1,5 +1,5 @@
 body {
-    background-color: #e2d6d6 !important;
+    background-color: rgb(61, 58, 58) !important;
 }
 .left {
     float: left;
@@ -20,14 +20,13 @@ body {
 /*Carousel*/
 .carousel {
     margin-top: 50px;
-}
-
-.item {
-    height: 500px;
+    text-align: center;
+    font-size: 2.5vw;
+    height: 500%;
 }
 
 .item img {
-    width: 100%;
+    width: 100%+10px;
 }
 
 .item h1 ,p{
@@ -35,17 +34,17 @@ body {
     color: #000;
 }
 
-/*Content*/
-.content {
-    margin-top: 50px;
+/*Navbar*/
+.mrg {
+  margin-top: 5px;
 }
-
+/*Content*/
 article {
     border:1px black solid;
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(212, 212, 211);
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 article img {
@@ -53,11 +52,18 @@ article img {
     height: 45%;
 }
 
+article badge {
+    margin-top: -5px;
+}
+
 /*Стили Footer*/
 footer{
-    height: 60px;
-    background-color: rgb(207, 207, 207);
+    height: auto;
+    background-color: rgb(107, 88, 88);
     border-top: 1px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
 }
                         /*Инфа*/
 .footerinf {
@@ -69,20 +75,37 @@ footer{
 .footersocial{
     padding-right: 20px;
     padding-top: 15px;
-    
 }
 
 .footersocial:hover {
-    filter: invert(50%);
+    filter: invert(100%);
     transition: 0.7s;
 }
 
 .bg {
-    margin-top: 60px;
+    margin-top: 10px;
     background-image: url(../img/background-div.jpg) ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 300px;
-    
+    padding: 10px;
+    height:auto; 
+    font-size: 2.5vw; 
 }
 
+/*Table*/
+ .table-1 {
+     text-align: center;
+ }
+
+ .table-1 table {
+     background-color: cornsilk;
+ }
+
+ .table-1 th {
+     text-align: center;
+ }
+
+ .table-1 td:hover {
+     background-color: darkslategray;
+     color: white;
+ }

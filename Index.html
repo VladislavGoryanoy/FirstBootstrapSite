@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-                                    <!--CSS-->
+    
+    <title>Home</title>
+    <link href="img/Tab_title.png" rel="shortcut icon" type="image/x-icon">
+    
      <!--Main CSS-->                               
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-tdeme.min.css" type="text/css">    
+    
+    <!--Fonts-->
+    <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.eot">
     <!--FA-->
-    <link rel="stylesheet" href="http://bootstraptema.ru/plugins/font-awesome/4-4-0/font-awesome.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -24,7 +27,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 col-sm-3 col-xs-12 my-col">
+                <div class="col-md-3 col-lg-2">
 
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -40,40 +43,54 @@
                     </div> <!--Navbar header-->
                 
                 </div> 
-                <div class="col-md-8 col-sm-9 col-xs-12 my-col">
+                <div class="col-md-9 col-lg-7 col-lg-offset-3">
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       
+                        <form class="navbar-form navbar-left" role="modal">
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myLogin">
+                                    <i class="fas fa-user"></i> User 
+                            </button>
+                        </form>
+                       
                         <form class="navbar-form navbar-left" role="search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search">
                             </div>
                             <button type="submit" class="btn btn-default">Search</button>
                         </form>
+                       
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
+                            <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Info</a></li>
-                            <li><a href="#">Feedback</a></li>
-                        </ul>
+                            <li><a href="#">AboutUs</a></li>
 
-                        <form class="navbar-form navbar-left" role="modal">
-                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myLogin">
-                                    <span class="glyphicon glyphicon-user"></span> User 
-                            </button>
-                        </form>
+                            <li class="dropdown">
+                                    <button type="button" class="btn btn-primary btn-md dropdown-toggle mrg" data-toggle="dropdown">
+                                        Dropdown<span class="caret"></span>
+                                    </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Item-1</a></li>
+                                    <li><a href="#">Item-2</a></li>
+                                    <li><a href="#">Item-3</a></li>
+                                    <li><a href="#">Item-4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
 
                     </div><!-- /.navbar-collapse -->
                 </div>
             </div>
         </div>  <!--Navbar Container-fluid-->
     </nav>  <!--Navbar-->
-
+    
     <!--Modal-->
     <div id="myLogin" class="modal fabe">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content modal-md">
                 <div class="modal-header">
                     <button class="close" data-dismiss="modal">
-                        <span class="glyphicon glyphicon-remove"></span>
+                            <i class="fas fa-times"></i>
                     </button>
                     <h1>SignIn</h1>
                 </div> <!--Modal Header-->
@@ -103,96 +120,408 @@
         </div> <!--Modal Dialog-->
     </div> <!--Modal-->
 
-    <div class="container-fluid bg">
-        <div>
-            <h1>Heading-1</h1>
-            <h2>Heading-2</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus cumque modi! Deleniti sapiente doloremque dolorem, accusamus quibusdam libero veritatis debitis cum neque delectus atque iure, facilis saepe inventore animi.</p>
-        </div>
-    </div>
-  
-    <!--Content-->
-    <div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <article> 
-                    <img src="img/article.jpeg" alt="">   
-                    <h1>Heading-1</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
-                    <button class="btn btn-block btn-info">Read</button>
-                </article>
-            </div>
-            <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <article>
-                    <img src="img/article.jpeg" alt=""> 
-                    <h1>Heading-2</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
-                    <button class="btn btn-block btn-info">Read</button>
-                </article>
-            </div>
-            <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <article>
-                    <img src="img/article.jpeg" alt=""> 
-                    <h1>Heading-3</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
-                    <button class="btn btn-block btn-info">Read</button>
-                </article>
-            </div>
-        </div><!--Row-->
-    </div> <!--Conteiner-->
-    </div> <!--Content-->
-
-    <!--Carousel-->
+<!--Carousel-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
         <!-- Указатели -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
+        
         <!-- Контент слайда (slider wrap)-->
         <div class="carousel-inner">
+           
             <div class="item active">
                 <img src="img/slide-1.jpg" alt="">
                 <div class="carousel-caption">
                     <h1>Heading-1</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et distinctio eius autem, nulla culpa voluptate quas dolorum, maxime odio ducimus laudantium eveniet. Ut beatae, voluptatibus quidem voluptatum deserunt dolor?</p>
                 </div>
-            </div>
+            </div><!--item1-->
+            
             <div class="item">
                 <img src="img/slide-2.jpg" alt="" class="">
                 <div class="carousel-caption">
                     <h1>Heading-2</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex minima quisquam! Molestiae minima voluptatum iste voluptate, nulla tempora aliquam. Velit architecto quisquam laudantium, temporibus sunt nisi praesentium illo quos?</p>
                 </div>
-            </div>
+            </div><!--item2-->
+            
             <div class="item">
                 <img src="img/slide-3.jpg" alt="">
                 <div class="carousel-caption">
                     <h1>Heading-3</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita velit autem, obcaecati quam vero aperiam mollitia minima nisi tempore, id deserunt in eum ab facilis molestiae rem. Debitis, sequi sunt!</p>
                 </div>
-            </div>
+            </div><!--item3-->
+        </div><!--Carusel-inner-->
+       
+        <!-- Элементы управления -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div><!--Carusel-->
 
-            </div>
-            <!-- Элементы управления -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
+<!--Content-->
+
+    <div class="container-fluid bg">
+        <div>
+            <h1 class="text-center">AboutUs</h1>
+            <h2 class="text-center">Heading-2</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus autem voluptates nihil reprehenderit provident quo quam deserunt adipisci itaque numquam. Amet maiores ex quo officia dolorum eveniet deserunt porro velit.</p>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus cumque modi! Deleniti sapiente doloremque dolorem, accusamus quibusdam libero veritatis debitis cum neque delectus atque iure, facilis saepe inventore animi.</p>
+            <button type="button" class="btn btn-info btn-lg center-block">Read more...</button>
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-1" data-toggle="tab">Articles</a></li>
+            <li><a href="#tab-2" data-toggle="tab">Accordion+Spoiler</a></li>
+            <li><a href="#tab-3" data-toggle="tab">Table</a></li>
+        </ul>
+        <div class="tab-content">
+            
+            <div class="tab-pane fade in active" id="tab-1">
+               
+                <div class="container-fluid">
+
+                    <div class="container mrg">
+                        <div class="row">
+                            <div class="container">
+                                <ol class="breadcrumb">
+                                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                                    <li><a href="#" >Categories</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li class="active">Today news</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="text-center panel panel-info panel-md">Follow our news</h1>
+                    <div class="row">
+                        <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <article class="text-center"> 
+                                <img src="img/article.jpeg" alt="">   
+                                <h1>Heading-1</h1> 
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
+                                <button class="btn btn-block btn-info">Read</button>
+                            </article>
+                        </div>
+                        <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <article class="text-center">
+                                <img src="img/article.jpeg" alt=""> 
+                                <h1>Heading-2</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
+                                <button class="btn btn-block btn-info">Read</button>
+                            </article>
+                        </div>
+                        <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <article class="text-center">
+                                <img src="img/article.jpeg" alt=""> 
+                                <h1>Heading-3</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia cumque, molestiae sequi, assumenda accusantium tempora at quo impedit dolorum asperiores doloremque? Aliquid atque aspernatur ex rem sed laborum laudantium?</p>
+                                <button class="btn btn-block btn-info">Read</button>
+                            </article>
+                        </div>
+                        <nav class="text-center">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-left"></i>
+                                        <i class="fa fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                                                                            
+
+                            </ul>
+                        </nav>
+                        </div> <!--Tab-pane-1-->
+                    </div><!--Row-->
+                </div> <!--Conteiner-->
+
+                <div class="tab-pane fade" id="tab-2">
+                    
+                    <div class="panel-group" id="accordion">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Open accordion 1</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapse-1">
+                                <div class="panel-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, adipisci. Tempora molestiae ut reiciendis quibusdam deleniti expedita ipsam voluptates officiis quae, eius optio omnis consectetur veritatis sint a excepturi magni.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Open accordion 2</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-2">
+                                <div class="panel-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, adipisci. Tempora molestiae ut reiciendis quibusdam deleniti expedita ipsam voluptates officiis quae, eius optio omnis consectetur veritatis sint a excepturi magni.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Open accordion 3</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-3">
+                                <div class="panel-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, adipisci. Tempora molestiae ut reiciendis quibusdam deleniti expedita ipsam voluptates officiis quae, eius optio omnis consectetur veritatis sint a excepturi magni.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>  <!--Panel-group-->   
+                    
+                    <div class="container">
+                        <a href="#spoiler" class="btn btn-info btn-block collapsed" data-toggle="collapse">Open spoiler</a>
+                        <div class="collapse" id="spoiler">
+                            <div class="well">
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestias labore at cum explicabo voluptates optio sunt non suscipit, officia, consequuntur in a facilis tempora nisi excepturi sit ipsum? Autem!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Tab-pane-2-->
+                
+                <div class="tab-pane fade" id="tab-3">
+                    <div class="table-responsive table-1">
+                        <h1 class="text-primary">Таблица умножения!</h1>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="active">
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="active">2</th>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>14</td>
+                                    <td>16</td>
+                                    <td>18</td>
+                                    <td>20</td>
+                                </tr>
+                                    <th class="active">3</th>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>12</td>
+                                    <td>15</td>
+                                    <td>18</td>
+                                    <td>21</td>
+                                    <td>24</td>
+                                    <td>27</td>
+                                    <td>30</td>
+                                </tr>
+                                    <th class="active">4</th>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>16</td>
+                                    <td>20</td>
+                                    <td>24</td>
+                                    <td>28</td>
+                                    <td>32</td>
+                                    <td>36</td>
+                                    <td>40</td>
+                                </tr>
+                                    <th class="active">5</th>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>20</td>
+                                    <td>25</td>
+                                    <td>30</td>
+                                    <td>35</td>
+                                    <td>40</td>
+                                    <td>45</td>
+                                    <td>50</td>
+                                </tr>
+                                    <th class="active">6</th>
+                                    <td>12</td>
+                                    <td>18</td>
+                                    <td>24</td>
+                                    <td>30</td>
+                                    <td>36</td>
+                                    <td>42</td>
+                                    <td>48</td>
+                                    <td>54</td>
+                                    <td>60</td>
+                                </tr>
+                                    <th class="active">7</th>
+                                    <td>14</td>
+                                    <td>21</td>
+                                    <td>28</td>
+                                    <td>35</td>
+                                    <td>42</td>
+                                    <td>49</td>
+                                    <td>56</td>
+                                    <td>63</td>
+                                    <td>70</td>
+                                </tr>
+                                    <th class="active">8</th>
+                                    <td>16</td>
+                                    <td>24</td>
+                                    <td>32</td>
+                                    <td>40</td>
+                                    <td>48</td>
+                                    <td>56</td>
+                                    <td>64</td>
+                                    <td>72</td>
+                                    <td>80</td>
+                                </tr>
+                                    <th class="active">9</th>
+                                    <td>18</td>
+                                    <td>27</td>
+                                    <td>36</td>
+                                    <td>45</td>
+                                    <td>54</td>
+                                    <td>63</td>
+                                    <td>72</td>
+                                    <td>81</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="container text-center">
+                        <h1 class="text-primary">Таблица сравнения</h1>
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr class="active">
+                                    <td>Название</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>                            
+                                </tr>
+                             </thead>
+                             <tbody>
+                                <tr class="success">
+                                    <td>Параметр 1</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Параметр 2</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>Параметр 3</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Параметр 4</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>Параметр 5</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Параметр 6</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>Параметр 7</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Параметр 8</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                    </tr>
+                                <tr class="success">
+                                    <td>Параметр 9</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Параметр 10</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>Параметр 11</td>
+                                    <td>Продукт1</td>
+                                    <td>Продукт2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+            </div> <!--Tab content-->
+        </div> <!--Tabs-->
 
         <!--Footer-->
         <footer>
-            <span class="left footerinf">&copy; 2018 VladislavGoryanoy, LittleGeek.</span>
-            <div>
-                <img src="img/instagram.png" alt="instagram" class="right footersocial" title="Instagram">
-                <img src="img/twitter.png" alt="twitter" class="right footersocial" title="Twitter">
-                <img src="img/facebook.png" alt="facebook" class="right footersocial" title="Facebook">
-                <img src="img/google_plus.png" alt="google+" class="right footersocial" title="Google+">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <span class="left footerinf">&copy; 2018 VladislavGoryanoy, LittleGeek.</span>
+                    </div>    
+                    <div class="col-xs-10 col-offset-xs-2 col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/instagram.png" alt="instagram" class="right footersocial" title="Instagram">
+                        <img src="img/twitter.png" alt="twitter" class="right footersocial" title="Twitter">
+                        <img src="img/facebook.png" alt="facebook" class="right footersocial" title="Facebook">
+                        <img src="img/google_plus.png" alt="google+" class="right footersocial" title="Google+">
+                    </div>
+                </div>
             </div>
         </footer>
 
